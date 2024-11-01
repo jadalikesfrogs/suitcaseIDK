@@ -83,8 +83,8 @@ void removeItem(vector<string>& suitcase){
 	// maybe show the list 
 	cin >> theItem;
 
-	for (auto items = suitcase.begin(); items != suitcase.end(); items++) { // auto is an interator. fancy pointer used for counting.
-		if (*items == theItem) { //* makes it a pointer to compare it to the string
+	for (auto items = suitcase.begin(); items != suitcase.end(); items++) { // goes through each item from the beginning// auto is an interator. fancy pointer used for counting.
+		if (*items == theItem) { // if the item im looking at is the one im pointing at, erase it//* makes it a pointer to compare it to the string
 			suitcase.erase(items); 
 			break;
 		} // if
