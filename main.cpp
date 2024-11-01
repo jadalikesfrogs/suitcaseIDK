@@ -77,9 +77,17 @@ void listItems(vector<string>& suitcase){
 
 void removeItem(vector<string>& suitcase){
 	string theItem;
+	size_t theItemPosition;
+
 	cout << "What do you want to remove? " << endl;
 	// maybe show the list 
 	cin >> theItem;
 
+	for (auto items = suitcase.begin(); items != suitcase.end(); items++) { // auto is an interator. fancy pointer used for counting.
+		if (*items == theItem) { //* makes it a pointer to compare it to the string
+			suitcase.erase(items); 
+			break;
+		} // if
+	}// for 
 
 }
