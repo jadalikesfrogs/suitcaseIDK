@@ -12,7 +12,7 @@ remove items
 using namespace std;
 
 void addItem(vector<string>& suitcase);
-
+void listItems(vector<string>& suitcase);
 int main() {
 
 	vector<string> suitcase;
@@ -33,7 +33,7 @@ int main() {
 			addItem(suitcase);
 			break;
 		case 'L':
-			
+			listItems(suitcase);
 		case 'R':
 		
 		case 'Q':
@@ -53,4 +53,21 @@ void addItem(vector<string>& suitcase){
 	cin >> newItem;
 	suitcase.push_back(newItem);
 
+}
+
+void listItems(vector<string>& suitcase){
+	//display all items in the suitcase
+
+	cout << "You have packed: " << endl;
+
+	if (suitcase.size() == 0) { 
+		cout << "Nothing!"; 
+	}
+
+	else {
+		for (size_t index = 0; index < suitcase.size(); index++) {
+			cout << suitcase.at(index);
+		
+		} // for
+	} // else
 }
