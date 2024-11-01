@@ -34,6 +34,7 @@ int main() {
 			break;
 		case 'L':
 			listItems(suitcase);
+			break;
 		case 'R':
 		
 		case 'Q':
@@ -65,7 +66,7 @@ void listItems(vector<string>& suitcase){
 	}
 
 	else {
-		for (size_t index = 0; index < suitcase.size(); index++) {
+		for (size_t index = 0; index < suitcase.size(); index++) { // lists the items in the suitcase
 			cout << suitcase.at(index);
 		
 		} // for
