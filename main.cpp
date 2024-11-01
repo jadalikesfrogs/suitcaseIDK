@@ -13,6 +13,7 @@ using namespace std;
 
 void addItem(vector<string>& suitcase);
 void listItems(vector<string>& suitcase);
+void removeItem(vector<string>& suitcase);
 int main() {
 
 	vector<string> suitcase;
@@ -36,7 +37,8 @@ int main() {
 			listItems(suitcase);
 			break;
 		case 'R':
-		
+			removeItem(suitcase);
+			break;
 		case 'Q':
 			cout << "Thanks" << endl;
 		default: cout << "I don't know how to do that.";
@@ -71,4 +73,13 @@ void listItems(vector<string>& suitcase){
 		
 		} // for
 	} // else
+}
+
+void removeItem(vector<string>& suitcase){
+	string theItem;
+	cout << "What do you want to remove? " << endl;
+	// maybe show the list 
+	cin >> theItem;
+
+
 }
